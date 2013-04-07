@@ -28,4 +28,7 @@ echo $next_state > $cycle_state_path
 echo "Using ${arandr_list[$current_state]}"
 ${arandr_list[$current_state]}
 
+#xmessage "Using ${arandr_list[$current_state]}"
+notify-send "Attempting ${arandr_list[$current_state]}"
+
 exit 0
